@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Club - Club Members</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+        
+        .navbar { width: 100%; background: #1e293b; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #334155; }
+        .navbar-brand { display: flex; align-items: center; gap: 0.75rem; }
+        .brand-icon { width: 35px; height: 35px; border-radius: 6px; }
+        .brand-title { font-weight: 700; font-size: 1.2rem; color: #00f2fe; letter-spacing: 1px; }
+        .navbar-links { display: flex; gap: 1rem; list-style: none; }
+        .nav-btn { text-decoration: none; color: #94a3b8; font-weight: 600; padding: 0.5rem 1rem; border-radius: 6px; transition: 0.3s; font-size: 0.9rem; }
+        .nav-btn:hover, .nav-btn.active { color: #fff; background: #334155; }
+        .nav-btn.active { border-bottom: 2px solid #00f2fe; }
+
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 2rem; margin: 3rem 1rem; width: 100%; max-width: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .card h4 { color: #00f2fe; font-size: 1.4rem; text-align: center; margin-bottom: 1.5rem; }
+        
+        input[type="text"] { width: 100%; padding: 0.75rem 1rem; margin-bottom: 1rem; background: #0f172a; border: 1px solid #334155; border-radius: 6px; color: #fff; font-size: 0.95rem; outline: none; }
+        input[type="text"]:focus { border-color: #00f2fe; }
+        input[type="button"] { width: 100%; padding: 0.75rem; background: linear-gradient(135deg, #00f2fe, #4facfe); border: none; border-radius: 6px; color: #0f172a; font-weight: 700; cursor: pointer; transition: 0.2s; }
+        input[type="button"]:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        #result { margin-top: 1rem; padding: 0.75rem; border-radius: 6px; text-align: center; word-break: break-word; }
+
+        .footer { margin-top: auto; width: 100%; background: #1e293b; text-align: center; padding: 1rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid #334155; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="https://cdn-icons-png.flaticon.com/512/4021/4021738.png" alt="Logo" class="brand-icon">
+            <span class="brand-title">GAMING CLUB</span>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html" class="nav-btn">HOMEPAGE</a></li>
+            <li><a href="elements-checker.html" class="nav-btn">ELEMENT CHECKER</a></li>
+            <li><a href="club-members.html" class="nav-btn active">SCHOOL CLUB MEMBERS</a></li>
+            <li><a href="creator-profile.html" class="nav-btn">MEET THE CREATOR</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <h4>Add New Club Member</h4>
+        <form>
+            <input type="text" id="first_name" placeholder="First Name">
+            <input type="text" id="last_name" placeholder="Last Name">
+            <input type="button" value="Submit" py-click="result_checker">
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Gaming Club &bull; Drill 2</p>
+    </footer>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Club - Meet the Creator</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+        
+        .navbar { width: 100%; background: #1e293b; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #334155; }
+        .navbar-brand { display: flex; align-items: center; gap: 0.75rem; }
+        .brand-icon { width: 35px; height: 35px; border-radius: 6px; }
+        .brand-title { font-weight: 700; font-size: 1.2rem; color: #00f2fe; letter-spacing: 1px; }
+        .navbar-links { display: flex; gap: 1rem; list-style: none; }
+        .nav-btn { text-decoration: none; color: #94a3b8; font-weight: 600; padding: 0.5rem 1rem; border-radius: 6px; transition: 0.3s; font-size: 0.9rem; }
+        .nav-btn:hover, .nav-btn.active { color: #fff; background: #334155; }
+        .nav-btn.active { border-bottom: 2px solid #00f2fe; }
+
+        .profile-card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 2.5rem 2rem; margin: 3rem 1rem; width: 100%; max-width: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); text-align: center; }
+        .profile-avatar { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #00f2fe; margin-bottom: 1rem; }
+        .profile-name { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; letter-spacing: 0.5px; }
+
+        .info-box { background: #0f172a; border: 1px solid #334155; padding: 0.75rem; border-radius: 8px; margin-bottom: 0.75rem; }
+        .info-label { display: block; font-size: 0.75rem; font-weight: 700; color: #00f2fe; letter-spacing: 1px; margin-bottom: 0.25rem; }
+        .info-value { font-size: 1rem; color: #cbd5e1; font-weight: 600; }
+
+        .footer { margin-top: auto; width: 100%; background: #1e293b; text-align: center; padding: 1rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid #334155; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="https://cdn-icons-png.flaticon.com/512/4021/4021738.png" alt="Logo" class="brand-icon">
+            <span class="brand-title">GAMING CLUB</span>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html" class="nav-btn">HOMEPAGE</a></li>
+            <li><a href="elements-checker.html" class="nav-btn">ELEMENT CHECKER</a></li>
+            <li><a href="club-members.html" class="nav-btn">SCHOOL CLUB MEMBERS</a></li>
+            <li><a href="creator-profile.html" class="nav-btn active">MEET THE CREATOR</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-card">
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/899329967_2466673257410699_2035928010923050171_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=brz3CRvFvcoQ7kNvwGAj2o3&_nc_oc=AdoMNVatBQkfcqztcr97j66xpJBYOv3syl6An_hV45DfGcVOKoVy8Ij0mCeRKWAukYc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_ss=7a22e&oh=03_Q7cD6wGn37rgcnjxxKWxfmltJeZqLgC6gCpl4qOzBZ-U6WnMwg&oe=6B1BE5CE" alt="Profile Picture" class="profile-avatar">
+        <h1 class="profile-name">JOEL GABRIEL GONZALES</h1>
+
+        <div class="info-box">
+            <span class="info-label">GRADE AND SECTION</span>
+            <p class="info-value">10-Emerald</p>
+        </div>
+
+        <div class="info-box">
+            <span class="info-label">CAMPUS</span>
+            <p class="info-value">Greenhills</p>
+        </div>
+
+        <div class="info-box">
+            <span class="info-label">INTERESTS</span>
+            <p class="info-value">Fragrances, Watches, Guitar, Basketball, Her</p>
+        </div>
+        
+        <div class="info-box">
+            <span class="info-label">Dreams</span>
+            <p class="info-value">To become a CPA Lawyer, Councilor, Congressman, President</p>
+        </div>
+        
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2026 Gaming Club &bull; Meet the Creator</p>
+    </footer>
+
+</body>
+</html>
